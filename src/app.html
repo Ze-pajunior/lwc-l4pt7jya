@@ -1,0 +1,16 @@
+<template>
+<lightning-card title="Mamaco Corp">
+	<!-- Buscando registros  -->	
+	<ul>
+		<!-- Chave/Indice -->
+		<template for:each = {contatos} for:item="itemCont">
+     <li key={itemCont.Id}> {itemCont.Nome} - {itemCont.Cargo} </li>	
+		</template>
+		<!--
+		<li> Cleiton Rasta, Pesidente</li>
+		<li> Gato Motoka,Vice Presidente</li>
+   	<li> Geladeira Tsunami, Diretota LATAM </li>	
+		-->
+	</ul>
+</lightning-card>
+</template>
